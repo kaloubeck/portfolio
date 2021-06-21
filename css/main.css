@@ -31,13 +31,17 @@
      color: #fff;
  }
  
+ nav .navbar,
+ .container {
+     width: 90%;
+     margin: auto;
+     padding: 10px 0;
+ }
+ 
  nav .navbar {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     width: 90%;
-     margin: auto;
-     padding: 10px 0;
  }
  
  nav .navbar .logo a {
@@ -186,3 +190,87 @@
          width: 30%;
      }
  }
+ /* About me start*/
+ 
+ .main .About_me {}
+ 
+ .main .About_me .aboutme {
+     margin: 50px auto;
+     color: #0e2431;
+ }
+ 
+ .main .About_me h2,
+ .main .myskills h2 {
+     font-size: 35px;
+     font-weight: 700;
+     border-bottom: 4px solid #4070f4;
+     width: fit-content;
+     margin: 5px auto;
+ }
+ 
+ .main .About_me h2::after,
+ .main .myskills h2 {
+     content: "";
+     display: block;
+     width: 80%;
+     margin: 5px auto;
+     padding: 2px 0;
+     right: auto;
+     background-color: #4070f4;
+ }
+ 
+ .main .About_me .about_me_centent {
+     display: flex;
+     margin-top: 10px;
+     justify-content: center;
+ }
+ 
+ .main .About_me .about_me_centent .about_me_pic {
+     width: 30%;
+     background-image: url(../img/about.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ 
+ .main .About_me .about_me_centent .about_me_text {
+     color: #0e2431;
+     width: 60%;
+     padding-left: 40px;
+ }
+ 
+ .main .About_me .about_me_centent .about_me_text .text_title {
+     font-size: 20px;
+     font-weight: 600;
+ }
+ 
+ .main .About_me .about_me_centent .about_me_text .text_centent {
+     margin-top: 10px;
+     line-height: 25px;
+     word-spacing: 2.5px;
+     font-size: 17px;
+ }
+ 
+ .main .About_me .about_me_centent .about_me_text .cv_btn {
+     margin-top: 10px;
+ }
+ 
+ .main .About_me .about_me_centent .about_me_text .cv_btn button {
+     color: white;
+     background-color: #4070f4;
+     border: 2px solid white;
+     border-radius: 5px;
+     font-size: 25px;
+     font-weight: 600;
+     padding: 10px 15px;
+     outline: none;
+     cursor: pointer;
+ }
+ 
+ .main .About_me .about_me_centent .about_me_text .cv_btn button:hover {
+     color: #4070f4;
+     background-color: white;
+     transition: 0.5s;
+     border: 2px solid #4070f4;
+ }
+ /* About me end*/
