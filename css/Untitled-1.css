@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container .color-switcher {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    width: 20%;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    padding: 5px;
+    align-items: center;
+}
+
+.container .color-switcher li {
+    flex-grow: 2;
+    height: 2.5vh;
+    margin: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.container .color-switcher li:first-child {
+    background-color: salmon;
+}
+
+.container .color-switcher li:nth-child(2) {
+    background-color: royalblue;
+}
+
+.container .color-switcher li:nth-child(3) {
+    background-color: yellowgreen;
+}
+
+.container .color-switcher li:nth-child(4) {
+    background-color: blueviolet;
+}
+
+.container .hidding {
+    color: salmon;
+    font-style: 'arial';
+    margin: 10px;
+}
+
+.container .testing {
+    background-color: salmon;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.royalblue .container .hidding {
+    color: royalblue;
+    font-style: 'arial';
+    margin: 10px;
+}
+
+.royalblue .container .testing {
+    background-color: royalblue;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.blueviolet .container .hidding {
+    color: blueviolet;
+    font-style: 'arial';
+    margin: 10px;
+}
+
+.blueviolet .container .testing {
+    background-color: blueviolet;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.yellowgreen .container .hidding {
+    color: yellowgreen;
+    font-style: 'arial';
+    margin: 10px;
+}
+
+.yellowgreen .container .testing {
+    background-color: yellowgreen;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+}
