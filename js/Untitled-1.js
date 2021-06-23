@@ -1,6 +1,6 @@
     document.body.classList.add(localStorage.getItem('pagecolor'));
 
-
+    document.styleSheets
     let el;
     el = document.querySelectorAll('.color-switcher li');
     let classlist;
@@ -23,9 +23,41 @@
                 // add localstorage
                 localStorage.setItem('pagecolor', this.getAttribute('data-color'));
 
+                document.documentElement.style.setProperty('--main-color', localStorage.getItem('pagecolor'));
             },
             false);
 
+
+        let color_theme = document.querySelector(".theme-color");
+        el[i].addEventListener(
+            'click',
+            () => {
+                color_theme.classList.toggle('hidden');
+            },
+            false);
+
+        el[i].addEventListener(
+            'click',
+            () => {
+                btn_theme.style = "display: fixed;";
+            },
+            false);
     }
 
-    console.log(localStorage.getItem('pagecolor'));
+    document.documentElement.style.setProperty('--main-color', localStorage.getItem('pagecolor'));
+
+
+
+    let btn_theme = document.querySelector(".btn_theme");
+    let color_theme = document.querySelector(".theme-color");
+
+    btn_theme.addEventListener(
+        'click',
+        () => {
+            color_theme.classList.toggle('hidden');
+        }, false);
+
+
+    btn_theme.addEventListener('click', function() {
+        btn_theme.style = "display: none;"
+    }, false);

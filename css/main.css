@@ -9,6 +9,64 @@
      scroll-behavior: smooth;
  }
  
+ :root {
+     --main-color: #4070f4;
+     --main-color-dark: #0e2431;
+ }
+ 
+ .btn_theme {
+     background-image: url(../img/theme.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+     padding: 30px;
+     cursor: pointer;
+     position: fixed;
+     bottom: 50%;
+     left: -35px;
+     transition: left 0.5s;
+ }
+ 
+ .btn_theme:hover,
+ .btn_theme:active {
+     left: 0px;
+ }
+ 
+ .hidden {
+     display: none;
+ }
+ 
+ .theme-color .color-switcher {
+     list-style: none;
+     margin: 0 auto;
+     position: fixed;
+     bottom: 50%;
+ }
+ 
+ .theme-color .color-switcher li {
+     width: 35px;
+     height: 35px;
+     margin: 5px auto;
+     cursor: pointer;
+     border-radius: 50%;
+ }
+ 
+ .theme-color .color-switcher li:first-child {
+     background-color: royalblue;
+ }
+ 
+ .theme-color .color-switcher li:nth-child(2) {
+     background-color: salmon;
+ }
+ 
+ .theme-color .color-switcher li:nth-child(3) {
+     background-color: yellowgreen;
+ }
+ 
+ .theme-color .color-switcher li:nth-child(4) {
+     background-color: blueviolet;
+ }
+ 
  body {
      font-family: 'Poppins', sans-serif;
  }
@@ -21,7 +79,7 @@
  }
  
  nav.sticky {
-     background-color: #4070f4;
+     background-color: var(--main-color);
  }
  
  nav.sticky .navbar .logo a,
@@ -45,7 +103,7 @@
  }
  
  nav .navbar .logo a {
-     color: #4070f4;
+     color: var(--main-color);
      font-size: 35px;
      font-weight: 500;
  }
@@ -59,16 +117,16 @@
      margin: 0 10px;
      font-size: 18px;
      font-weight: 500;
-     color: #0e2431;
+     color: var(--main-color-dark);
      transition: color 0.2s;
  }
  
  nav .navbar .menu li a:hover {
-     color: #4070f4;
+     color: var(--main-color);
  }
  
  nav .navbar .media_icon i {
-     color: #4070f4;
+     color: var(--main-color);
      margin: 0 2px;
      padding: 0 2px;
      font-size: 18px;
@@ -90,7 +148,7 @@
          width: 100%;
          max-width: 350px;
          height: 100vh;
-         background-color: #0e2431;
+         background-color: var(--main-color-dark);
          padding: 100px 0;
          transition: .5s;
      }
@@ -110,7 +168,7 @@
          cursor: pointer;
      }
      nav .navbar .btn_bar {
-         color: #4070f4;
+         color: var(--main-color);
      }
      nav .navbar .menu .cancel_btn {
          color: red;
@@ -139,7 +197,7 @@
      justify-content: center;
      align-items: flex-start;
      flex-direction: column;
-     color: #0e2431;
+     color: var(--main-color-dark);
  }
  
  .home_section .home_centent .text-one,
@@ -154,7 +212,7 @@
  }
  
  .home_section .home_centent .text-three {
-     color: #4070f4;
+     color: var(--main-color);
      font-size: 30px;
  }
  
@@ -162,7 +220,7 @@
      color: white;
      font-size: 30px;
      border: 2px solid white;
-     background-color: #4070f4;
+     background-color: var(--main-color);
      padding: 2.5px 0;
      margin-top: 20px;
      border-radius: 10px;
@@ -174,9 +232,9 @@
  }
  
  .home_section .home_centent .text-five:hover {
-     color: #4070f4;
+     color: var(--main-color);
      background-color: white;
-     border-color: #4070f4;
+     border-color: var(--main-color);
  }
  
  @media (max-width:560px) {
@@ -196,14 +254,14 @@
  
  .main .About_me .aboutme {
      margin: 50px auto;
-     color: #0e2431;
+     color: var(--main-color-dark);
  }
  
  .main .About_me h2,
  .main .myskills h2 {
      font-size: 35px;
      font-weight: 700;
-     border-bottom: 4px solid #4070f4;
+     border-bottom: 4px solid var(--main-color);
      width: fit-content;
      margin: 5px auto;
  }
@@ -216,7 +274,7 @@
      margin: 5px auto;
      padding: 2px 0;
      right: auto;
-     background-color: #4070f4;
+     background-color: var(--main-color);
  }
  
  .main .About_me .about_me_centent {
@@ -234,7 +292,7 @@
  }
  
  .main .About_me .about_me_centent .about_me_text {
-     color: #0e2431;
+     color: var(--main-color-dark);
      width: 60%;
      padding-left: 40px;
  }
@@ -257,7 +315,7 @@
  
  .main .About_me .about_me_centent .about_me_text .cv_btn button {
      color: white;
-     background-color: #4070f4;
+     background-color: var(--main-color);
      border: 2px solid white;
      border-radius: 5px;
      font-size: 25px;
@@ -268,9 +326,9 @@
  }
  
  .main .About_me .about_me_centent .about_me_text .cv_btn button:hover {
-     color: #4070f4;
+     color: var(--main-color);
      background-color: white;
      transition: 0.5s;
-     border: 2px solid #4070f4;
+     border: 2px solid var(--main-color);
  }
  /* About me end*/
