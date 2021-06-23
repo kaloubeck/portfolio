@@ -250,8 +250,6 @@
  }
  /* About me start*/
  
- .main .About_me {}
- 
  .main .About_me .aboutme {
      margin: 50px auto;
      color: var(--main-color-dark);
