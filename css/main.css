@@ -1,146 +1,158 @@
- *,
- ::after,
- ::before {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     text-decoration: none;
-     outline: none;
-     scroll-behavior: smooth;
- }
- 
- :root {
-     --main-color: #4070f4;
-     --main-color-dark: #0e2431;
- }
- 
- .btn_theme {
-     background-image: url(../img/theme.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
-     padding: 30px;
-     cursor: pointer;
-     position: fixed;
-     bottom: 50%;
-     right: -35px;
-     transition: left 0.5s;
- }
- 
- .btn_theme:hover,
- .btn_theme:active {
-     right: 0px;
- }
- 
- .hidden {
-     display: none;
- }
- 
- .theme-color .color-switcher {
-     list-style: none;
-     margin: 0 auto;
-     position: fixed;
-     bottom: 50%;
- }
- 
- .theme-color .color-switcher li {
-     width: 35px;
-     height: 35px;
-     margin: 5px auto;
-     cursor: pointer;
-     border-radius: 50%;
- }
- 
- .theme-color .color-switcher li:first-child {
-     background-color: royalblue;
- }
- 
- .theme-color .color-switcher li:nth-child(2) {
-     background-color: salmon;
- }
- 
- .theme-color .color-switcher li:nth-child(3) {
-     background-color: yellowgreen;
- }
- 
- .theme-color .color-switcher li:nth-child(4) {
-     background-color: blueviolet;
- }
- 
- body {
-     font-family: 'Poppins', sans-serif;
- }
- /*navigation menu*/
- 
- nav {
-     position: fixed;
-     width: 100%;
-     transition: all 0.5;
- }
- 
- nav.sticky {
-     background-color: var(--main-color);
- }
- 
- nav.sticky .navbar .logo a,
- nav.sticky .navbar .menu li a,
- nav.sticky .navbar .media_icon i,
- nav.sticky .navbar .btn_bar {
-     color: #fff;
- }
- 
- nav .navbar,
- .container {
-     width: 90%;
-     margin: auto;
-     padding: 10px 0;
- }
- 
- nav .navbar {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
- 
- nav .navbar .logo a {
-     color: var(--main-color);
-     font-size: 35px;
-     font-weight: 500;
- }
- 
- nav .navbar .menu {
-     list-style: none;
-     display: flex;
- }
- 
- nav .navbar .menu li a {
-     margin: 0 10px;
-     font-size: 18px;
-     font-weight: 500;
-     color: var(--main-color-dark);
-     transition: color 0.2s;
- }
- 
- nav .navbar .menu li a:hover {
-     color: var(--main-color);
- }
- 
- nav .navbar .media_icon i {
-     color: var(--main-color);
-     margin: 0 2px;
-     padding: 0 2px;
-     font-size: 18px;
- }
- 
- nav .navbar .btn_bar,
- nav .navbar .menu .cancel_btn {
-     display: none;
- }
- /*Responsive Media Quiry*/
- 
- @media (max-width:760px) {
-     /* theme switcher Start*/
-     /*
+     *,
+      ::after,
+      ::before {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         text-decoration: none;
+         outline: none;
+         scroll-behavior: smooth;
+     }
+     
+      :root {
+         --main-color: #4070f4;
+         --main-color-dark: #0e2431;
+     }
+     
+     .btn_theme {
+         background-image: url(../img/theme.png);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         padding: 30px;
+         cursor: pointer;
+         position: fixed;
+         bottom: 50%;
+         right: -35px;
+         transition: left 0.5s;
+     }
+     
+     .btn_theme:hover,
+     .btn_theme:active {
+         right: 0px;
+     }
+     
+     .hidden {
+         display: none;
+     }
+     
+     .theme-color .color-switcher {
+         list-style: none;
+         margin: 0 auto;
+         position: fixed;
+         bottom: 50%;
+     }
+     
+     .theme-color .color-switcher li {
+         width: 35px;
+         height: 35px;
+         margin: 5px auto;
+         cursor: pointer;
+         border-radius: 50%;
+     }
+     
+     .theme-color .color-switcher li:first-child {
+         background-color: royalblue;
+     }
+     
+     .theme-color .color-switcher li:nth-child(2) {
+         background-color: salmon;
+     }
+     
+     .theme-color .color-switcher li:nth-child(3) {
+         background-color: yellowgreen;
+     }
+     
+     .theme-color .color-switcher li:nth-child(4) {
+         background-color: blueviolet;
+     }
+     
+     body {
+         font-family: 'Poppins', sans-serif;
+     }
+     /*navigation menu*/
+     
+     nav {
+         position: fixed;
+         width: 100%;
+         transition: all 0.5;
+     }
+     
+     nav.sticky {
+         background-color: var(--main-color);
+     }
+     
+     nav.sticky .navbar .logo a,
+     nav.sticky .navbar .menu li a,
+     nav.sticky .navbar .media_icon i,
+     nav.sticky .navbar .btn_bar {
+         color: #fff;
+     }
+     
+     nav .navbar,
+     .container {
+         width: 90%;
+         margin: auto;
+         padding: 10px 0;
+     }
+     
+     nav .navbar {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+     
+     nav .navbar .logo a {
+         color: var(--main-color);
+         font-size: 35px;
+         font-weight: 500;
+     }
+     
+     nav .navbar .menu {
+         list-style: none;
+         display: flex;
+     }
+     
+     nav .navbar .menu li a {
+         margin: 0 10px;
+         font-size: 18px;
+         font-weight: 500;
+         color: var(--main-color-dark);
+         transition: color 0.2s;
+     }
+     
+     nav .navbar .menu li a:hover {
+         color: var(--main-color);
+     }
+     
+     nav .navbar .media_icon i {
+         color: var(--main-color);
+         margin: 0 2px;
+         padding: 0 2px;
+         font-size: 18px;
+     }
+     
+     nav .navbar .btn_bar,
+     nav .navbar .menu .cancel_btn {
+         display: none;
+     }
+     /*Responsive Media Quiry*/
+     
+     @media (max-width:760px) {
+         .main .About_me .about_me_centent {
+             flex-direction: column;
+         }
+         .main .About_me .about_me_centent .about_me_text {
+             width: 100% !important;
+             text-align: center;
+             padding: 0 5px !important;
+         }
+         .main .About_me .about_me_centent .about_me_pic {
+             height: 55vh;
+             margin: 0px auto 10px;
+         }
+         /* theme switcher Start*/
+         /*
      .btn_theme {
          display: none;
      }
@@ -155,197 +167,197 @@
      .theme-color .color-switcher li {
          margin: 0 5px;
      }*/
-     /* theme switcher end*/
-     nav .navbar .menu {
-         flex-direction: column;
-         align-items: center;
-         position: absolute;
-         right: -100%;
-         top: 0;
-         width: 100%;
-         max-width: 350px;
+         /* theme switcher end*/
+         nav .navbar .menu {
+             flex-direction: column;
+             align-items: center;
+             position: absolute;
+             right: -100%;
+             top: 0;
+             width: 100%;
+             max-width: 350px;
+             height: 100vh;
+             background-color: var(--main-color-dark);
+             padding: 100px 0;
+             transition: .5s;
+         }
+         nav .navbar .menu li a {
+             font-size: 23px;
+             color: white;
+             display: block;
+             margin: 10px 0;
+         }
+         nav .navbar .btn_bar,
+         nav .navbar .menu .cancel_btn {
+             display: block;
+             font-size: 23px;
+             position: absolute;
+             top: 20px;
+             right: 20px;
+             cursor: pointer;
+         }
+         nav .navbar .btn_bar {
+             color: var(--main-color);
+         }
+         nav .navbar .menu .cancel_btn {
+             color: red;
+         }
+         nav .navbar .media_icon {
+             display: none;
+         }
+     }
+     /* Section Home */
+     
+     .home_section {
          height: 100vh;
-         background-color: var(--main-color-dark);
-         padding: 100px 0;
-         transition: .5s;
+         width: 100%;
+         background-image: url(../img/background.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
      }
-     nav .navbar .menu li a {
-         font-size: 23px;
+     
+     .home_section .home_centent {
+         width: 90%;
+         height: 100%;
+         margin: auto;
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         flex-direction: column;
+         color: var(--main-color-dark);
+     }
+     
+     .home_section .home_centent .text-one,
+     .home_section .home_centent .text-four {
+         font-size: 20px;
+         font-weight: 400;
+     }
+     
+     .home_section .home_centent .text-two {
+         font-size: 50px;
+         font-weight: 600;
+     }
+     
+     .home_section .home_centent .text-three {
+         color: var(--main-color);
+         font-size: 30px;
+     }
+     
+     .home_section .home_centent .text-five {
          color: white;
-         display: block;
-         margin: 10px 0;
+         font-size: 30px;
+         border: 2px solid white;
+         background-color: var(--main-color);
+         padding: 2.5px 0;
+         margin-top: 20px;
+         border-radius: 10px;
+         width: 35%;
+         text-align: center;
+         cursor: pointer;
+         transition: border, background-color 0.2s;
+         outline: none;
      }
-     nav .navbar .btn_bar,
-     nav .navbar .menu .cancel_btn {
+     
+     .home_section .home_centent .text-five:hover {
+         color: var(--main-color);
+         background-color: white;
+         border-color: var(--main-color);
+     }
+     
+     @media (max-width:560px) {
+         .home_section .home_centent .text-two {
+             font-size: 40px;
+             font-weight: 500;
+         }
+         .home_section .home_centent .text-five {
+             font-size: 25px;
+             padding: 2px 0;
+             width: 30%;
+         }
+     }
+     /* About me start*/
+     
+     .main .About_me .aboutme {
+         margin: 50px auto 0;
+         color: var(--main-color-dark);
+     }
+     
+     .main .About_me h2,
+     .main .myskills h2 {
+         font-size: 35px;
+         font-weight: 700;
+         border-bottom: 4px solid var(--main-color);
+         width: fit-content;
+         margin: 5px auto;
+         color: var(--main-color-dark);
+     }
+     
+     .main .About_me h2::after,
+     .main .myskills h2::after {
+         content: "";
          display: block;
-         font-size: 23px;
-         position: absolute;
-         top: 20px;
-         right: 20px;
+         width: 80%;
+         margin: 5px auto;
+         padding: 2px 0;
+         right: auto;
+         background-color: var(--main-color);
+     }
+     
+     .main .About_me .about_me_centent {
+         display: flex;
+         margin-top: 10px;
+         justify-content: center;
+     }
+     
+     .main .About_me .about_me_centent .about_me_pic {
+         width: 30%;
+         background-image: url(../img/about.jpg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+     }
+     
+     .main .About_me .about_me_centent .about_me_text {
+         color: var(--main-color-dark);
+         width: 60%;
+         padding-left: 40px;
+     }
+     
+     .main .About_me .about_me_centent .about_me_text .text_title {
+         font-size: 20px;
+         font-weight: 600;
+     }
+     
+     .main .About_me .about_me_centent .about_me_text .text_centent {
+         margin-top: 10px;
+         line-height: 25px;
+         word-spacing: 2.5px;
+         font-size: 17px;
+     }
+     
+     .main .About_me .about_me_centent .about_me_text .cv_btn {
+         margin: 10px auto;
+         width: 50%;
+     }
+     
+     .main .About_me .about_me_centent .about_me_text .cv_btn button {
+         color: white;
+         background-color: var(--main-color);
+         border: 2px solid white;
+         border-radius: 5px;
+         font-size: 25px;
+         font-weight: 600;
+         padding: 10px 15px;
+         outline: none;
          cursor: pointer;
      }
-     nav .navbar .btn_bar {
+     
+     .main .About_me .about_me_centent .about_me_text .cv_btn button:hover {
          color: var(--main-color);
+         background-color: white;
+         transition: 0.5s;
+         border: 2px solid var(--main-color);
      }
-     nav .navbar .menu .cancel_btn {
-         color: red;
-     }
-     nav .navbar .media_icon {
-         display: none;
-     }
- }
- /* Section Home */
- 
- .home_section {
-     height: 100vh;
-     width: 100%;
-     background-image: url(../img/background.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-     background-attachment: fixed;
- }
- 
- .home_section .home_centent {
-     width: 90%;
-     height: 100%;
-     margin: auto;
-     display: flex;
-     justify-content: center;
-     align-items: flex-start;
-     flex-direction: column;
-     color: var(--main-color-dark);
- }
- 
- .home_section .home_centent .text-one,
- .home_section .home_centent .text-four {
-     font-size: 20px;
-     font-weight: 400;
- }
- 
- .home_section .home_centent .text-two {
-     font-size: 50px;
-     font-weight: 600;
- }
- 
- .home_section .home_centent .text-three {
-     color: var(--main-color);
-     font-size: 30px;
- }
- 
- .home_section .home_centent .text-five {
-     color: white;
-     font-size: 30px;
-     border: 2px solid white;
-     background-color: var(--main-color);
-     padding: 2.5px 0;
-     margin-top: 20px;
-     border-radius: 10px;
-     width: 35%;
-     text-align: center;
-     cursor: pointer;
-     transition: border, background-color 0.2s;
-     outline: none;
- }
- 
- .home_section .home_centent .text-five:hover {
-     color: var(--main-color);
-     background-color: white;
-     border-color: var(--main-color);
- }
- 
- @media (max-width:560px) {
-     .home_section .home_centent .text-two {
-         font-size: 40px;
-         font-weight: 500;
-     }
-     .home_section .home_centent .text-five {
-         font-size: 25px;
-         padding: 2px 0;
-         width: 30%;
-     }
- }
- /* About me start*/
- 
- .main .About_me .aboutme {
-     margin: 50px auto;
-     color: var(--main-color-dark);
- }
- 
- .main .About_me h2,
- .main .myskills h2 {
-     font-size: 35px;
-     font-weight: 700;
-     border-bottom: 4px solid var(--main-color);
-     width: fit-content;
-     margin: 5px auto;
-     color: var(--main-color-dark);
- }
- 
- .main .About_me h2::after,
- .main .myskills h2::after {
-     content: "";
-     display: block;
-     width: 80%;
-     margin: 5px auto;
-     padding: 2px 0;
-     right: auto;
-     background-color: var(--main-color);
- }
- 
- .main .About_me .about_me_centent {
-     display: flex;
-     margin-top: 10px;
-     justify-content: center;
- }
- 
- .main .About_me .about_me_centent .about_me_pic {
-     width: 30%;
-     background-image: url(../img/about.jpg);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: contain;
- }
- 
- .main .About_me .about_me_centent .about_me_text {
-     color: var(--main-color-dark);
-     width: 60%;
-     padding-left: 40px;
- }
- 
- .main .About_me .about_me_centent .about_me_text .text_title {
-     font-size: 20px;
-     font-weight: 600;
- }
- 
- .main .About_me .about_me_centent .about_me_text .text_centent {
-     margin-top: 10px;
-     line-height: 25px;
-     word-spacing: 2.5px;
-     font-size: 17px;
- }
- 
- .main .About_me .about_me_centent .about_me_text .cv_btn {
-     margin: 10px auto;
-     width: 50%;
- }
- 
- .main .About_me .about_me_centent .about_me_text .cv_btn button {
-     color: white;
-     background-color: var(--main-color);
-     border: 2px solid white;
-     border-radius: 5px;
-     font-size: 25px;
-     font-weight: 600;
-     padding: 10px 15px;
-     outline: none;
-     cursor: pointer;
- }
- 
- .main .About_me .about_me_centent .about_me_text .cv_btn button:hover {
-     color: var(--main-color);
-     background-color: white;
-     transition: 0.5s;
-     border: 2px solid var(--main-color);
- }
- /* About me end*/
+     /* About me end*/
