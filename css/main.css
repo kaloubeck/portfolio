@@ -23,13 +23,13 @@
      cursor: pointer;
      position: fixed;
      bottom: 50%;
-     left: -35px;
+     right: -35px;
      transition: left 0.5s;
  }
  
  .btn_theme:hover,
  .btn_theme:active {
-     left: 0px;
+     right: 0px;
  }
  
  .hidden {
@@ -139,6 +139,23 @@
  /*Responsive Media Quiry*/
  
  @media (max-width:760px) {
+     /* theme switcher Start*/
+     /*
+     .btn_theme {
+         display: none;
+     }
+     .hidden {
+         display: block;
+     }
+     .theme-color .color-switcher {
+         display: flex;
+         position: absolute;
+         top: 2;
+     }
+     .theme-color .color-switcher li {
+         margin: 0 5px;
+     }*/
+     /* theme switcher end*/
      nav .navbar .menu {
          flex-direction: column;
          align-items: center;
@@ -262,10 +279,11 @@
      border-bottom: 4px solid var(--main-color);
      width: fit-content;
      margin: 5px auto;
+     color: var(--main-color-dark);
  }
  
  .main .About_me h2::after,
- .main .myskills h2 {
+ .main .myskills h2::after {
      content: "";
      display: block;
      width: 80%;
@@ -308,7 +326,8 @@
  }
  
  .main .About_me .about_me_centent .about_me_text .cv_btn {
-     margin-top: 10px;
+     margin: 10px auto;
+     width: 50%;
  }
  
  .main .About_me .about_me_centent .about_me_text .cv_btn button {
